@@ -1,7 +1,9 @@
 use std::env;
 use std::process;
 
-mod odj_loader;
+mod obj_loader;
+
+use obj_loader::Obj;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -13,4 +15,6 @@ fn main() {
     let file_path = &args[1];
 
     println!("Opening file : {file_path}");
+
+    let Object = Obj::new();
 }

@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 vulkanalia = "0.28.0"
 sfml = { version = "0.24.0", default-features = false, features = ["window", "graphics"] }
+cookie_lib_rust = { git = "https://github.com/coookiecoder/cookie_lib_rust", branch = "master" }
